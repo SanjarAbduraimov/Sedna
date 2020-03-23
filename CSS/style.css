@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    position: relative;
+    background: url(../image/bg.jpg) center no-repeat  fixed;
+    background-size: cover;
+    font-family: sans-serif;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+body::before {
+    z-index: -1;
+    content: '';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    background: rgba(3, 0, 39, 0.836);
+}
+
+#container {
+    width: 100%;
+    height: 100vh;
+}
+
+nav {
+    border-bottom: 1px solid #5f697e;
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    height: fit-content;
+}
+
+nav #logo h1 {
+    letter-spacing: 3px;
+    color: #5f697e;
+}
+
+nav #logo h1 span {
+    color: #ddd;
+}
+
+#main-bar > ul {
+    display: flex;
+    list-style: none;
+}
+
+#main-bar > ul li {
+    /* margin: 0 10px; */
+}
+
+#main-bar > ul li a {
+    transition-duration: 0.4s;
+    border-radius: 30px;
+    padding: 10px 20px;
+    color: #bbb;
+}
+
+#main-bar > ul li a:hover {
+    transition-duration: 0.7s;
+    color: #fff;
+    background: #ff5274;
+}
+
+a {
+    text-decoration: none;
+}
+
+#auth-link a {
+    color: #ddd;
+    border-radius: 30px;
+    padding: 10px 20px ;
+    margin: 0px;
+    transition-duration: 0.4s;
+}
+
+#auth-link #signup-but {
+    border: 1px solid;
+}
+
+
+#auth-link a:hover {
+    transition-duration: 0.7s;
+    background: cornsilk;
+    color: black;
+}
+
+#main {
+    text-align: center;
+    margin-top: 150px;
+}
+
+#main h2 {
+    font-size: 50px;
+    word-spacing: 3px;
+    color: #eee;
+}
+
+#main p {
+    word-spacing: 3px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    color: #bbb;
+    margin-bottom: 100px ;
+    padding: 0 150px;
+}
+
+#main a {
+    color: #ff5274;
+    border: 1px solid;
+    border-radius: 30px;
+    padding: 15px 40px;
+    margin: 0 10px;
+    transition-duration: 0.5s;
+}
+
+#main a:hover {
+    border: #ff5274;
+    color: #ddd;
+    background: #ff5274;
+    transition-duration: 1s;
+}
+
+
+
+
